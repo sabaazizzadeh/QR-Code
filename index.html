@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1821px;
+            height: 900px;
+            background-image: url(./assets/images/bg-purple.png);
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            margin-top: 130px;
+            width: 710px;
+            height: 589px;
+            background-color: #B221F617;
+            border-radius: 48px;
+            border: 3px;
+            border-color: #ffffff;
+        }
+
+        .paragraph {
+            color: white;
+            font-size: 16px;
+        }
+
+        h1 {
+            color: white;
+            font-family: Monda;
+            font-weight: 400;
+            font-size: 48px;
+            margin-top: 0;
+        }
+        .paragraph{
+            margin-top: 5px;
+        }
+        .title{
+            margin-top: 20px;
+            color: #FFFFFF;
+            font-size:16px;
+            font-weight:400 ;
+        }
+        input{
+            margin-top: 20px;
+            width: 248px;
+            height: 33px;
+            border-radius: 25px;
+            border: none;
+            background-color: #321B43;
+            text-align:center;
+        }
+        button{
+            margin-top: 12px;
+            width: 152px;
+            height: 40px;
+            border-radius: 25px;
+            border: none;
+            background-color: #773DA6;
+            color: #FFFFFF;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .QR{
+            margin-top: 10px;
+            width: 300px;
+            height: 300px;
+            border-radius: 25px;
+            border:none;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: white;">QRcode</h1>
+        <p class="paragraph">generator</p>
+        <h2 class="title">Submit URL or text</h2>
+        <input type="text" placeholder="Enter text or URL here ">
+        <button>Generate</button>
+        <div class="QR"></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
