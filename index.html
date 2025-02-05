@@ -15,7 +15,7 @@
         body {
             width: 1821px;
             height: 900px;
-            background-image: url(./assets/images/bg-purple.png);
+             background-image: url(./assets/images/bg-purple.png);
             font-family:Arial, Helvetica, sans-serif;
         }
 
@@ -63,7 +63,7 @@
             background-color: #321B43;
             text-align:center;
         }
-        button{
+        .GenerateButton{
             margin-top: 12px;
             width: 152px;
             height: 40px;
@@ -75,6 +75,10 @@
             cursor: pointer;
         }
         .QR{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin-top: 10px;
             width: 300px;
             height: 300px;
@@ -82,16 +86,38 @@
             border:none;
             background-color: white;
         }
+        .buttonContainer{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-self: center;
+            align-items: center;
+        }
+        .clearButton{
+            background-color: white;
+            color: #773DA6;
+            margin-top: 12px;
+            margin-left: 5px;
+            width: 152px;
+            height: 40px;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+
         <h1 style="color: white;">QRcode</h1>
         <p class="paragraph">generator</p>
         <h2 class="title">Submit URL or text</h2>
         <input type="text" placeholder="Enter text or URL here ">
-        <button>Generate</button>
+       <div class="buttonContainer"> 
+        <button class="clearButton">CLEAR</button>
+        <button class="GenerateButton">Generate</button>
+       </div>
         <div class="QR"></div>
     </div>
     <script src="./app.js"></script>
